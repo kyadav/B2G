@@ -73,6 +73,10 @@ case "$1" in
 	echo DEVICE=crespo4g >> .tmp-config &&
 	repo_sync $1
 	;;
+"wave-2")
+        echo DEVICE=wave 2 >>.tmp-config &&
+        repo_sync $1
+        ;;
 
 "otoro"|"unagi"|"keon"|"inari"|"leo"|"hamachi"|"peak")
 	echo DEVICE=$1 >> .tmp-config &&
@@ -110,6 +114,7 @@ case "$1" in
 	echo - galaxy-nexus
 	echo - nexus-s
 	echo - nexus-s-4g
+	echo - wave-2
 	echo - otoro
 	echo - unagi
 	echo - inari
